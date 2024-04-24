@@ -19,7 +19,6 @@ struct RenameEverythingApp
         guard !ProcessInfo.terminalArguments.isEmpty else
         {
             print(String.helpText)
-            //print("Hello I should be red with a yellow background".color(.greenBright).font([.bold, .italic]))
             return
         }
         
@@ -33,22 +32,20 @@ struct RenameEverythingApp
         {
             self.renamingType = try parseRenamingType(arguments: &ProcessInfo.terminalArguments)
             
-            print(ProcessInfo.terminalArguments)
-            
-            print("Will use \"\(self.renamingType.displayableRepresentation)\" as renaming type")
+            writeLine("Will use \"\(self.renamingType.displayableRepresentation)\" as renaming type", lineStyle: .info)
         }
         catch let renamingParsingError as RenamingParsingTypeError
         {
             switch renamingParsingError {
                 case .couldNotParseRenamingType:
-                    print("Renaming type declaration specified, but no renaming type was provided")
+                    writeLine("Renaming type declaration specified, but no renaming type was provided", lineStyle: .error)
                 case .noRenamingTypeSpecified:
-                    print("Could not parse custom renaming type")
+                    writeLine("Could not parse custom renaming type", lineStyle: .error)
             }
         }
         catch
         {
-            print("Parsing of arguments failed")
+            writeLine("Parsing of arguments failed", lineStyle: .error)
         }
     }
 }
