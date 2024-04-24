@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftyTerminalColors
 
 @main
 struct RenameEverythingApp
@@ -18,7 +19,7 @@ struct RenameEverythingApp
         guard !ProcessInfo.terminalArguments.isEmpty else
         {
             print(String.helpText)
-            print("Hello I should be red with a yellow background".color(.greenBright).font([.bold, .italic]))
+            //print("Hello I should be red with a yellow background".color(.greenBright).font([.bold, .italic]))
             return
         }
         

@@ -1,0 +1,15 @@
+{
+  "originHash" : "738e706023d297a4ed1f841890ef44efeeb1caafadf0529caaf0af1a4173a212",
+  "pins" : [
+    {
+      "identity" : "swiftyterminalcolors",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/buresdv/SwiftyTerminalColors",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2d7549d43a226322046d666a31d1262a84c92d67"
+      }
+    }
+  ],
+  "version" : 3
+}

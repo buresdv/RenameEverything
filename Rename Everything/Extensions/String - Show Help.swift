@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftyTerminalColors
 
 extension String
 {

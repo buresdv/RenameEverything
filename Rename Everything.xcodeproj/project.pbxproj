@@ -14,10 +14,7 @@
 		63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F72BD9021800A5B732 /* Array - Drop First.swift */; };
 		63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */; };
 		63D649042BD9256200A5B732 /* String - Show Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649032BD9256200A5B732 /* String - Show Help.swift */; };
-		63D649062BD9274900A5B732 /* ANSI Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649052BD9274900A5B732 /* ANSI Colors.swift */; };
-		63D649082BD9276900A5B732 /* String - Color Using ANSI Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649072BD9276900A5B732 /* String - Color Using ANSI Code.swift */; };
-		63D6490A2BD9389100A5B732 /* ANSI Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649092BD9389100A5B732 /* ANSI Fonts.swift */; };
-		63D6490C2BD938FB00A5B732 /* String - Font ANSI codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6490B2BD938FB00A5B732 /* String - Font ANSI codes.swift */; };
+		63D6490F2BD93EF200A5B732 /* SwiftyTerminalColors in Frameworks */ = {isa = PBXBuildFile; productRef = 63D6490E2BD93EF200A5B732 /* SwiftyTerminalColors */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,10 +38,6 @@
 		63D648F72BD9021800A5B732 /* Array - Drop First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array - Drop First.swift"; sourceTree = "<group>"; };
 		63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parse Renaming Type.swift"; sourceTree = "<group>"; };
 		63D649032BD9256200A5B732 /* String - Show Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String - Show Help.swift"; sourceTree = "<group>"; };
-		63D649052BD9274900A5B732 /* ANSI Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ANSI Colors.swift"; sourceTree = "<group>"; };
-		63D649072BD9276900A5B732 /* String - Color Using ANSI Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String - Color Using ANSI Code.swift"; sourceTree = "<group>"; };
-		63D649092BD9389100A5B732 /* ANSI Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ANSI Fonts.swift"; sourceTree = "<group>"; };
-		63D6490B2BD938FB00A5B732 /* String - Font ANSI codes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String - Font ANSI codes.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D6490F2BD93EF200A5B732 /* SwiftyTerminalColors in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				63D648F52BD901B000A5B732 /* Renaming Types.swift */,
-				63D649052BD9274900A5B732 /* ANSI Colors.swift */,
-				63D649092BD9389100A5B732 /* ANSI Fonts.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -110,8 +102,6 @@
 				63D648F32BD9016100A5B732 /* Process Info - Terminal Arguments.swift */,
 				63D648F72BD9021800A5B732 /* Array - Drop First.swift */,
 				63D649032BD9256200A5B732 /* String - Show Help.swift */,
-				63D649072BD9276900A5B732 /* String - Color Using ANSI Code.swift */,
-				63D6490B2BD938FB00A5B732 /* String - Font ANSI codes.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,6 +122,9 @@
 			dependencies = (
 			);
 			name = "Rename Everything";
+			packageProductDependencies = (
+				63D6490E2BD93EF200A5B732 /* SwiftyTerminalColors */,
+			);
 			productName = "Rename Everything";
 			productReference = 63D648D52BD8592400A5B732 /* Rename Everything */;
 			productType = "com.apple.product-type.tool";
@@ -160,6 +153,9 @@
 				Base,
 			);
 			mainGroup = 63D648CC2BD8592400A5B732;
+			packageReferences = (
+				63D6490D2BD93EF200A5B732 /* XCRemoteSwiftPackageReference "SwiftyTerminalColors" */,
+			);
 			productRefGroup = 63D648D62BD8592400A5B732 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -175,15 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D649042BD9256200A5B732 /* String - Show Help.swift in Sources */,
-				63D649062BD9274900A5B732 /* ANSI Colors.swift in Sources */,
 				63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */,
 				63D648D92BD8592400A5B732 /* RenameEverythingApp.swift in Sources */,
 				63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */,
-				63D6490C2BD938FB00A5B732 /* String - Font ANSI codes.swift in Sources */,
 				63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */,
 				63D648F22BD9014300A5B732 /* Array - Safe Access.swift in Sources */,
-				63D649082BD9276900A5B732 /* String - Color Using ANSI Code.swift in Sources */,
-				63D6490A2BD9389100A5B732 /* ANSI Fonts.swift in Sources */,
 				63D648F42BD9016100A5B732 /* Process Info - Terminal Arguments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63D6490D2BD93EF200A5B732 /* XCRemoteSwiftPackageReference "SwiftyTerminalColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/buresdv/SwiftyTerminalColors";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63D6490E2BD93EF200A5B732 /* SwiftyTerminalColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63D6490D2BD93EF200A5B732 /* XCRemoteSwiftPackageReference "SwiftyTerminalColors" */;
+			productName = SwiftyTerminalColors;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63D648CD2BD8592400A5B732 /* Project object */;
 }
