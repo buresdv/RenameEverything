@@ -13,6 +13,7 @@
 		63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F52BD901B000A5B732 /* Renaming Types.swift */; };
 		63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F72BD9021800A5B732 /* Array - Drop First.swift */; };
 		63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */; };
+		63D649042BD9256200A5B732 /* String - Show Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649032BD9256200A5B732 /* String - Show Help.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		63D648F52BD901B000A5B732 /* Renaming Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Renaming Types.swift"; sourceTree = "<group>"; };
 		63D648F72BD9021800A5B732 /* Array - Drop First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array - Drop First.swift"; sourceTree = "<group>"; };
 		63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parse Renaming Type.swift"; sourceTree = "<group>"; };
+		63D649032BD9256200A5B732 /* String - Show Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String - Show Help.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				63D648F12BD9014300A5B732 /* Array - Safe Access.swift */,
 				63D648F32BD9016100A5B732 /* Process Info - Terminal Arguments.swift */,
 				63D648F72BD9021800A5B732 /* Array - Drop First.swift */,
+				63D649032BD9256200A5B732 /* String - Show Help.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D649042BD9256200A5B732 /* String - Show Help.swift in Sources */,
 				63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */,
 				63D648D92BD8592400A5B732 /* RenameEverythingApp.swift in Sources */,
 				63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */,

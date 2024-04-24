@@ -17,8 +17,14 @@ struct RenameEverythingApp
     {
         guard !ProcessInfo.terminalArguments.isEmpty else
         {
-            print("No arguments passed")
-            fatalError("No arguments passed")
+            print(String.helpText)
+            return
+        }
+        
+        guard ProcessInfo.terminalArguments.filter({ $0 == "--help" }).isEmpty else
+        {
+            print(String.helpText)
+            return
         }
         
         do
