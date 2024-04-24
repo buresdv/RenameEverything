@@ -7,7 +7,7 @@
 
 import Foundation
 
-func processFiles(files: [URL], transformationType: RenamingType) throws -> Void
+func processFiles(files: [URL], transformationType: RenamingType) async throws -> Void
 {
     
 }

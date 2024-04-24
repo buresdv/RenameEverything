@@ -18,6 +18,7 @@
 		63D649122BD95DA600A5B732 /* Write Line to Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649112BD95DA600A5B732 /* Write Line to Terminal.swift */; };
 		63D649152BD961D200A5B732 /* Process Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649142BD961D200A5B732 /* Process Files.swift */; };
 		63D649172BD9642900A5B732 /* App Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649162BD9642900A5B732 /* App Globals.swift */; };
+		63D649192BD96A7600A5B732 /* Get Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649182BD96A7600A5B732 /* Get Files.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,7 @@
 		63D649112BD95DA600A5B732 /* Write Line to Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Write Line to Terminal.swift"; sourceTree = "<group>"; };
 		63D649142BD961D200A5B732 /* Process Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Process Files.swift"; sourceTree = "<group>"; };
 		63D649162BD9642900A5B732 /* App Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Globals.swift"; sourceTree = "<group>"; };
+		63D649182BD96A7600A5B732 /* Get Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Get Files.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				63D649142BD961D200A5B732 /* Process Files.swift */,
+				63D649182BD96A7600A5B732 /* Get Files.swift */,
 			);
 			path = "File System";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */,
 				63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */,
 				63D648F22BD9014300A5B732 /* Array - Safe Access.swift in Sources */,
+				63D649192BD96A7600A5B732 /* Get Files.swift in Sources */,
 				63D648F42BD9016100A5B732 /* Process Info - Terminal Arguments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

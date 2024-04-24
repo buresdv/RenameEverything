@@ -32,6 +32,8 @@ struct RenameEverythingApp
         {
             AppGlobals.shared.isDebugModeEnabled = true
             
+            writeLine(ProcessInfo.terminalArguments, lineStyle: .debug)
+            
             guard let indexOfDebugFlag = ProcessInfo.terminalArguments.firstIndex(of: "--debug") else
             {
                 writeLine("Could not parse arguments: Could not find debug flag index", lineStyle: .error)
@@ -64,7 +66,42 @@ struct RenameEverythingApp
                 return
             }
             
+            writeLine("Final arguments after all modifications: \(ProcessInfo.terminalArguments)", lineStyle: .debug)
             
+            guard let folderLocation = ProcessInfo.terminalArguments.first else
+            {
+                writeLine("You did not provide a valid file location", lineStyle: .error)
+                return
+            }
+            
+            do
+            {
+                // MARK: - Getting of files form a folder, then displaying them if debug is enabled
+                let filesInFolder: [URL] = try getFiles(from: folderLocation)
+                
+                writeLine("Found \(filesInFolder.count) files in folder, including:", lineStyle: .debug)
+                
+                if AppGlobals.shared.isDebugModeEnabled
+                {
+                    for fileLocation in filesInFolder.prefix(upTo: 5)
+                    {
+                        writeLine("    \(fileLocation.path)".color(.gray), lineStyle: .noDecoration)
+                    }
+                }
+                
+                // MARK: - Renaming of files
+            }
+            catch let fileRetrievalError as FileLoadingError
+            {
+                switch fileRetrievalError {
+                    case .folderDoesNotExist:
+                        writeLine("Folder \(folderLocation) is not valid", lineStyle: .error)
+                    case .couldNotEncodeURL:
+                        writeLine("Could not verify that \(folderLocation) is a valid location", lineStyle: .error)
+                    case .couldNotAccessFolder:
+                        writeLine("Could not acess \(folderLocation)", lineStyle: .error)
+                }
+            }
         }
         catch let renamingParsingError as RenamingParsingTypeError
         {

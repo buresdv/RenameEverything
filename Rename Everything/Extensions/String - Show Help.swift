@@ -28,6 +28,7 @@ extension String
         \("Will rename all files in the specified folder to random UUIDs".font([.italic]).color(.gray))
       renameEverything \("--renameType randomWord".color(.red)) [folder location]
         \("Will rename all files in the specified folder to random English words".font([.italic]).color(.gray))
+
 \("Optional Flags:".font([.bold]))
   --debug: Enable debug mode
   --help: Show this help
