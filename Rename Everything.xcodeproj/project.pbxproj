@@ -16,6 +16,8 @@
 		63D649042BD9256200A5B732 /* String - Show Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649032BD9256200A5B732 /* String - Show Help.swift */; };
 		63D6490F2BD93EF200A5B732 /* SwiftyTerminalColors in Frameworks */ = {isa = PBXBuildFile; productRef = 63D6490E2BD93EF200A5B732 /* SwiftyTerminalColors */; };
 		63D649122BD95DA600A5B732 /* Write Line to Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649112BD95DA600A5B732 /* Write Line to Terminal.swift */; };
+		63D649152BD961D200A5B732 /* Process Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649142BD961D200A5B732 /* Process Files.swift */; };
+		63D649172BD9642900A5B732 /* App Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649162BD9642900A5B732 /* App Globals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,8 @@
 		63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parse Renaming Type.swift"; sourceTree = "<group>"; };
 		63D649032BD9256200A5B732 /* String - Show Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String - Show Help.swift"; sourceTree = "<group>"; };
 		63D649112BD95DA600A5B732 /* Write Line to Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Write Line to Terminal.swift"; sourceTree = "<group>"; };
+		63D649142BD961D200A5B732 /* Process Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Process Files.swift"; sourceTree = "<group>"; };
+		63D649162BD9642900A5B732 /* App Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Globals.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				63D648EE2BD9012300A5B732 /* Enums */,
 				63D648EF2BD9012700A5B732 /* Logic */,
 				63D648D82BD8592400A5B732 /* RenameEverythingApp.swift */,
+				63D649162BD9642900A5B732 /* App Globals.swift */,
 			);
 			path = "Rename Everything";
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 		63D648EF2BD9012700A5B732 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				63D649132BD961AC00A5B732 /* File System */,
 				63D649102BD95D9B00A5B732 /* Writing */,
 				63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */,
 			);
@@ -115,6 +121,14 @@
 				63D649112BD95DA600A5B732 /* Write Line to Terminal.swift */,
 			);
 			path = Writing;
+			sourceTree = "<group>";
+		};
+		63D649132BD961AC00A5B732 /* File System */ = {
+			isa = PBXGroup;
+			children = (
+				63D649142BD961D200A5B732 /* Process Files.swift */,
+			);
+			path = "File System";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +197,8 @@
 			files = (
 				63D649042BD9256200A5B732 /* String - Show Help.swift in Sources */,
 				63D649122BD95DA600A5B732 /* Write Line to Terminal.swift in Sources */,
+				63D649152BD961D200A5B732 /* Process Files.swift in Sources */,
+				63D649172BD9642900A5B732 /* App Globals.swift in Sources */,
 				63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */,
 				63D648D92BD8592400A5B732 /* RenameEverythingApp.swift in Sources */,
 				63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */,

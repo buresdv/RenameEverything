@@ -14,7 +14,7 @@ extension String
 \("\("Rename".color(.cyan))\("Everything".color(.blue))"): A tool for randomly mass-renaming files in a folder
 
 \("Usage:".font([.bold]))
-  renameEverything [optional arguments] [folder location]
+  renameEverything [optional flags] [optional arguments] [folder location]
   \("By default, the app will rename all items in the target folder to random UUIDs.".color(.gray))
   \("See below for other ways of renaming them".color(.gray))
 
@@ -28,8 +28,8 @@ extension String
         \("Will rename all files in the specified folder to random UUIDs".font([.italic]).color(.gray))
       renameEverything \("--renameType randomWord".color(.red)) [folder location]
         \("Will rename all files in the specified folder to random English words".font([.italic]).color(.gray))
-
-\("Options:".font([.bold]))
+\("Optional Flags:".font([.bold]))
+  --debug: Enable debug mode
   --help: Show this help
 """
 }
