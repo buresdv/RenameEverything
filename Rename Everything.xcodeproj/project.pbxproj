@@ -14,6 +14,8 @@
 		63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F72BD9021800A5B732 /* Array - Drop First.swift */; };
 		63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */; };
 		63D649042BD9256200A5B732 /* String - Show Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649032BD9256200A5B732 /* String - Show Help.swift */; };
+		63D649062BD9274900A5B732 /* ANSI Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649052BD9274900A5B732 /* ANSI Colors.swift */; };
+		63D649082BD9276900A5B732 /* String - Color Using ANSI Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D649072BD9276900A5B732 /* String - Color Using ANSI Code.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,8 @@
 		63D648F72BD9021800A5B732 /* Array - Drop First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array - Drop First.swift"; sourceTree = "<group>"; };
 		63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parse Renaming Type.swift"; sourceTree = "<group>"; };
 		63D649032BD9256200A5B732 /* String - Show Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String - Show Help.swift"; sourceTree = "<group>"; };
+		63D649052BD9274900A5B732 /* ANSI Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ANSI Colors.swift"; sourceTree = "<group>"; };
+		63D649072BD9276900A5B732 /* String - Color Using ANSI Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String - Color Using ANSI Code.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				63D648F52BD901B000A5B732 /* Renaming Types.swift */,
+				63D649052BD9274900A5B732 /* ANSI Colors.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				63D648F32BD9016100A5B732 /* Process Info - Terminal Arguments.swift */,
 				63D648F72BD9021800A5B732 /* Array - Drop First.swift */,
 				63D649032BD9256200A5B732 /* String - Show Help.swift */,
+				63D649072BD9276900A5B732 /* String - Color Using ANSI Code.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,11 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D649042BD9256200A5B732 /* String - Show Help.swift in Sources */,
+				63D649062BD9274900A5B732 /* ANSI Colors.swift in Sources */,
 				63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */,
 				63D648D92BD8592400A5B732 /* RenameEverythingApp.swift in Sources */,
 				63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */,
 				63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */,
 				63D648F22BD9014300A5B732 /* Array - Safe Access.swift in Sources */,
+				63D649082BD9276900A5B732 /* String - Color Using ANSI Code.swift in Sources */,
 				63D648F42BD9016100A5B732 /* Process Info - Terminal Arguments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
