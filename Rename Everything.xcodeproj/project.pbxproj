@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63D648D92BD8592400A5B732 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648D82BD8592400A5B732 /* main.swift */; };
+		63D648D92BD8592400A5B732 /* RenameEverythingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648D82BD8592400A5B732 /* RenameEverythingApp.swift */; };
+		63D648F22BD9014300A5B732 /* Array - Safe Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F12BD9014300A5B732 /* Array - Safe Access.swift */; };
+		63D648F42BD9016100A5B732 /* Process Info - Terminal Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F32BD9016100A5B732 /* Process Info - Terminal Arguments.swift */; };
+		63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F52BD901B000A5B732 /* Renaming Types.swift */; };
+		63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F72BD9021800A5B732 /* Array - Drop First.swift */; };
+		63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,12 @@
 
 /* Begin PBXFileReference section */
 		63D648D52BD8592400A5B732 /* Rename Everything */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Rename Everything"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63D648D82BD8592400A5B732 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		63D648D82BD8592400A5B732 /* RenameEverythingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameEverythingApp.swift; sourceTree = "<group>"; };
+		63D648F12BD9014300A5B732 /* Array - Safe Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array - Safe Access.swift"; sourceTree = "<group>"; };
+		63D648F32BD9016100A5B732 /* Process Info - Terminal Arguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Process Info - Terminal Arguments.swift"; sourceTree = "<group>"; };
+		63D648F52BD901B000A5B732 /* Renaming Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Renaming Types.swift"; sourceTree = "<group>"; };
+		63D648F72BD9021800A5B732 /* Array - Drop First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array - Drop First.swift"; sourceTree = "<group>"; };
+		63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parse Renaming Type.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,38 @@
 		63D648D72BD8592400A5B732 /* Rename Everything */ = {
 			isa = PBXGroup;
 			children = (
-				63D648D82BD8592400A5B732 /* main.swift */,
+				63D648F02BD9012F00A5B732 /* Extensions */,
+				63D648EE2BD9012300A5B732 /* Enums */,
+				63D648EF2BD9012700A5B732 /* Logic */,
+				63D648D82BD8592400A5B732 /* RenameEverythingApp.swift */,
 			);
 			path = "Rename Everything";
+			sourceTree = "<group>";
+		};
+		63D648EE2BD9012300A5B732 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				63D648F52BD901B000A5B732 /* Renaming Types.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		63D648EF2BD9012700A5B732 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				63D648F92BD904B800A5B732 /* Parse Renaming Type.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		63D648F02BD9012F00A5B732 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63D648F12BD9014300A5B732 /* Array - Safe Access.swift */,
+				63D648F32BD9016100A5B732 /* Process Info - Terminal Arguments.swift */,
+				63D648F72BD9021800A5B732 /* Array - Drop First.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D648D92BD8592400A5B732 /* main.swift in Sources */,
+				63D648FA2BD904B800A5B732 /* Parse Renaming Type.swift in Sources */,
+				63D648D92BD8592400A5B732 /* RenameEverythingApp.swift in Sources */,
+				63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */,
+				63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */,
+				63D648F22BD9014300A5B732 /* Array - Safe Access.swift in Sources */,
+				63D648F42BD9016100A5B732 /* Process Info - Terminal Arguments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
