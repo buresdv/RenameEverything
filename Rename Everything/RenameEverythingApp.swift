@@ -18,7 +18,7 @@ struct RenameEverythingApp
         guard !ProcessInfo.terminalArguments.isEmpty else
         {
             print(String.helpText)
-            print("Hello I should be red with a yellow background".color(.greenBright))
+            print("Hello I should be red with a yellow background".color(.greenBright).font([.bold, .italic]))
             return
         }
         

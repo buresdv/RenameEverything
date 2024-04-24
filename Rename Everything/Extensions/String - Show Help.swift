@@ -10,18 +10,23 @@ import Foundation
 extension String
 {
     static let helpText: String = """
-RenameEverything: A tool for mass-renaming of files in a folder
+\("\("Rename".color(.cyan))\("Everything".color(.blue))"): A tool for randomly mass-renaming files in a folder
 
-USAGE:
+\("Usage:".font([.bold]))
   renameEverything [optional arguments] [folder location]
 
-OPTIONAL ARGUMENTS:
+\("Optional Arguments:".font([.bold]))
   --renameType: Specify how files should be renamed
-    POSSIBLE TYPES:
+    \("Possible types:".font([.italic]).color(.blue))
       randomUUID: Rename files to random UUIDs
       randomWord: Rename files to random words
+    \("Example usage:".font([.italic]).color(.blue))
+      renameEverything --renameType randomUUID [folder location]
+        \("Will rename all files in the specified folder to random UUIDs".font([.italic]))
+      renameEverything --renameType randomWord [folder location]
+        \("Will rename all files in the specified folder to random English words".font([.italic]))
 
-OPTIONS:
+\("Options:".font([.bold]))
   --help: Show this help
 """
 }
