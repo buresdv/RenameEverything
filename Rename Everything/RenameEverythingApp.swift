@@ -15,7 +15,6 @@ struct RenameEverythingApp
     
     static func main() async -> Void
     {
-        print(ProcessInfo.terminalArguments)
         guard !ProcessInfo.terminalArguments.isEmpty else
         {
             print("No arguments passed")
@@ -26,7 +25,9 @@ struct RenameEverythingApp
         {
             self.renamingType = try parseRenamingType(arguments: &ProcessInfo.terminalArguments)
             
-            print(self.renamingType.displayableRepresentation)
+            print(ProcessInfo.terminalArguments)
+            
+            print("Will use \"\(self.renamingType.displayableRepresentation)\" as renaming type")
         }
         catch let renamingParsingError as RenamingParsingTypeError
         {

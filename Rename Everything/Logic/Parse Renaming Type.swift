@@ -30,5 +30,8 @@ func parseRenamingType(arguments: inout [String]) throws -> RenamingType
         throw RenamingParsingTypeError.couldNotParseRenamingType
     }
     
+    arguments.remove(at: indexOfRenamingTypeDeclaration + 1)
+    arguments.remove(at: indexOfRenamingTypeDeclaration)
+    
     return definedRenamingType
 }
