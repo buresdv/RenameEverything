@@ -17,7 +17,7 @@ enum ANSIColor: String
     case magenta = "\u{001B}[35m"
     case cyan = "\u{001B}[36m"
     case white = "\u{001B}[37m"
-    
+
     case blackBright = "\u{001B}[90m"
     case redBright = "\u{001B}[91m"
     case greenBright = "\u{001B}[92m"
@@ -26,7 +26,7 @@ enum ANSIColor: String
     case magentaBright = "\u{001B}[95m"
     case cyanBright = "\u{001B}[96m"
     case whiteBright = "\u{001B}[97m"
-    
+
     case reset = "\u{001B}[0m"
 }
 
@@ -41,3 +41,34 @@ enum ANSIColorBackground: String
     case cyan = "\u{001B}[46m"
     case white = "\u{001B}[47m"
 }
+
+// TODO: Implement these RGB colors
+/*
+enum ANSIColorRGB
+{
+    case rgb(red: Int, green: Int, blue: Int)
+    
+    var colorCode: String
+    {
+        switch self
+        {
+            case let .rgb(red, green, blue):
+                return "\u{001B}[38;2;\(red);\(green);\(blue)m"
+        }
+    }
+}
+
+enum ANSIColorRGBBackground
+{
+    case rgb(red: Int, green: Int, blue: Int)
+    
+    var colorCode: String
+    {
+        switch self
+        {
+            case let .rgb(red, green, blue):
+                return "\u{001B}[48;2;{\(red)};{\(green)};{\(blue)}m"
+        }
+    }
+}
+*/

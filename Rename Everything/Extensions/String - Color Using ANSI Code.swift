@@ -15,6 +15,18 @@ extension String
     }
     
     func background(_ color: ANSIColorBackground) -> String {
-        return "\(color.rawValue)\(self)"
+        return "\(color.rawValue)\(self)\(ANSIColor.reset.rawValue)"
     }
+    
+    // TODO: Implement these RGB colors
+    /*
+    func color(_ rgbColor: ANSIColorRGB) -> String
+    {
+        return "\(rgbColor.colorCode)\(self)\(ANSIColor.reset.rawValue)"
+    }
+    
+    func background(_ rgbColor: ANSIColorRGBBackground) -> String {
+        return "\(rgbColor.colorCode)\(self)\(ANSIColor.reset.rawValue)"
+    }
+     */
 }
