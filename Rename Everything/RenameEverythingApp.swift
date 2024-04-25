@@ -11,8 +11,6 @@ import SwiftyTerminalColors
 @main
 struct RenameEverythingApp
 {
-    static var renamingType: RenamingType = .randomUUID
-    
     static func main() async -> Void
     {
         guard !ProcessInfo.terminalArguments.isEmpty else
@@ -32,7 +30,7 @@ struct RenameEverythingApp
         {
             AppGlobals.shared.isDebugModeEnabled = true
             
-            writeLine(ProcessInfo.terminalArguments, lineStyle: .debug)
+            writeLine("All arguments received from the user:\n    \("\(ProcessInfo.terminalArguments)".color(.gray))", lineStyle: .debug)
             
             guard let indexOfDebugFlag = ProcessInfo.terminalArguments.firstIndex(of: "--debug") else
             {
@@ -42,17 +40,15 @@ struct RenameEverythingApp
             
             ProcessInfo.terminalArguments.remove(at: indexOfDebugFlag)
             
-            writeLine(ProcessInfo.terminalArguments, lineStyle: .debug)
+            writeLine("Arguments left after parsing out the debug flag:\n    \("\(ProcessInfo.terminalArguments)".color(.gray))", lineStyle: .debug)
         }
         
         do
         {
-            self.renamingType = try parseRenamingType(arguments: &ProcessInfo.terminalArguments)
+            AppGlobals.shared.transformationType = try parseRenamingType(arguments: &ProcessInfo.terminalArguments)
             
-            writeLine("Will use \"\(self.renamingType.displayableRepresentation)\" as renaming type", lineStyle: .info)
+            writeLine("Will use \"\(AppGlobals.shared.transformationType.displayableRepresentation)\" as renaming type", lineStyle: .info)
             
-            writeLine(ProcessInfo.terminalArguments, lineStyle: .debug)
-            writeLine(ProcessInfo.terminalArguments.count, lineStyle: .debug)
             
             guard ProcessInfo.terminalArguments.count != 0 else
             {
@@ -66,7 +62,7 @@ struct RenameEverythingApp
                 return
             }
             
-            writeLine("Final arguments after all modifications: \(ProcessInfo.terminalArguments)", lineStyle: .debug)
+            writeLine("Final arguments after all modifications:\n    \("\(ProcessInfo.terminalArguments)".color(.gray))", lineStyle: .debug)
             
             guard let folderLocation = ProcessInfo.terminalArguments.first else
             {
@@ -83,13 +79,17 @@ struct RenameEverythingApp
                 
                 if AppGlobals.shared.isDebugModeEnabled
                 {
-                    for fileLocation in filesInFolder.prefix(upTo: 5)
+                    for fileLocation in filesInFolder.prefix(5)
                     {
                         writeLine("    \(fileLocation.path)".color(.gray), lineStyle: .noDecoration)
                     }
                 }
                 
                 // MARK: - Renaming of files
+                do
+                {
+                    try await processFiles(files: filesInFolder, transformationType: AppGlobals.shared.transformationType)
+                }
             }
             catch let fileRetrievalError as FileLoadingError
             {

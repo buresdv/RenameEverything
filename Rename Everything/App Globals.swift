@@ -12,4 +12,5 @@ class AppGlobals
     static let shared = AppGlobals()
     
     var isDebugModeEnabled: Bool = false
+    var transformationType: RenamingType = .randomUUID
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63CB34BD2BDAF0920042EF2C /* URL - Get Random Line from File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB34BC2BDAF0920042EF2C /* URL - Get Random Line from File.swift */; };
 		63D648D92BD8592400A5B732 /* RenameEverythingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648D82BD8592400A5B732 /* RenameEverythingApp.swift */; };
 		63D648F22BD9014300A5B732 /* Array - Safe Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F12BD9014300A5B732 /* Array - Safe Access.swift */; };
 		63D648F42BD9016100A5B732 /* Process Info - Terminal Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D648F32BD9016100A5B732 /* Process Info - Terminal Arguments.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		63CB34BC2BDAF0920042EF2C /* URL - Get Random Line from File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL - Get Random Line from File.swift"; sourceTree = "<group>"; };
 		63D648D52BD8592400A5B732 /* Rename Everything */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Rename Everything"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D648D82BD8592400A5B732 /* RenameEverythingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameEverythingApp.swift; sourceTree = "<group>"; };
 		63D648F12BD9014300A5B732 /* Array - Safe Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array - Safe Access.swift"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				63D648F32BD9016100A5B732 /* Process Info - Terminal Arguments.swift */,
 				63D648F72BD9021800A5B732 /* Array - Drop First.swift */,
 				63D649032BD9256200A5B732 /* String - Show Help.swift */,
+				63CB34BC2BDAF0920042EF2C /* URL - Get Random Line from File.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				63D648F62BD901B000A5B732 /* Renaming Types.swift in Sources */,
 				63D648F82BD9021800A5B732 /* Array - Drop First.swift in Sources */,
 				63D648F22BD9014300A5B732 /* Array - Safe Access.swift in Sources */,
+				63CB34BD2BDAF0920042EF2C /* URL - Get Random Line from File.swift in Sources */,
 				63D649192BD96A7600A5B732 /* Get Files.swift in Sources */,
 				63D648F42BD9016100A5B732 /* Process Info - Terminal Arguments.swift in Sources */,
 			);

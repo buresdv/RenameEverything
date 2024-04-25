@@ -10,7 +10,7 @@ import Foundation
 enum RenamingType: String, CaseIterable, CustomStringConvertible
 {
     case randomUUID
-    case randomWords
+    case randomWord
 
     var description: String
     {
@@ -22,7 +22,7 @@ enum RenamingType: String, CaseIterable, CustomStringConvertible
         switch self {
             case .randomUUID:
                 return "Random UUID"
-            case .randomWords:
+            case .randomWord:
                 return "Random Words"
         }
     }
