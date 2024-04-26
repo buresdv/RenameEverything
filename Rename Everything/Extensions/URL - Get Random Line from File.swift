@@ -34,6 +34,17 @@ extension URL
             lineData.append(byte)
         }
         
+        /// If the random line is empty, try again
+        if lineData.isEmpty
+        {
+            let newAttempt = self.randomLine()
+            guard let newAttemptData = newAttempt?.data(using: .utf8) else
+            {
+                return nil
+            }
+            lineData = newAttemptData
+        }
+        
         return String(data: lineData, encoding: .utf8)
     }
 }

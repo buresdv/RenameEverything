@@ -42,16 +42,26 @@ func processFiles(files: [URL], transformationType: RenamingType) async throws -
 private func processRandomUUID(file: URL) async throws -> Void
 {
     let extensionOfOriginalFile: String = file.pathExtension
+    let parentLocationOfOriginalFile: URL = file.deletingLastPathComponent()
     
     let newUUID: UUID = UUID()
     
     writeLine("\(file.lastPathComponent.color(.gray)) → \("\(newUUID.uuidString).\(extensionOfOriginalFile)".color(.gray))", lineStyle: .info)
     
+    do
+    {
+        try FileManager.default.moveItem(at: file, to: parentLocationOfOriginalFile.appending(component: newUUID.uuidString).appendingPathExtension(extensionOfOriginalFile))
+    }
+    catch
+    {
+        throw RenamingError.failedWhileRenaming
+    }
 }
 
 private func processRandomWord(file: URL) async throws -> Void
 {
     let extensionOfOriginalFile: String = file.pathExtension
+    let parentLocationOfOriginalFile: URL = file.deletingLastPathComponent()
     
     guard let systemDictionaryLocation: URL = URL(string: "/usr/share/dict/words") else
     {
@@ -64,4 +74,13 @@ private func processRandomWord(file: URL) async throws -> Void
     }
     
     writeLine("\(file.lastPathComponent.color(.gray)) → \("\(randomWord).\(extensionOfOriginalFile)".color(.gray))", lineStyle: .info)
+    
+    do
+    {
+        try FileManager.default.moveItem(at: file, to: parentLocationOfOriginalFile.appending(component: randomWord).appendingPathExtension(extensionOfOriginalFile))
+    }
+    catch
+    {
+        throw RenamingError.failedWhileRenaming
+    }
 }
